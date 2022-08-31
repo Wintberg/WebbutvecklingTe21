@@ -1,3 +1,31 @@
-body{
-    border: 3px solid;
+body,th,td{
+    border: 1px solid;
+    width: 25%;
 }
+table {
+    border-spacing: 0px;
+}
+th:nth-child(1){
+    text-align: left;
+    background-color: brown;
+}
+th:nth-child(2){
+    background-color: brown;
+}
+th:nth-child(3){
+    background-color: brown;
+}
+th:nth-child(4){
+    text-align: right;
+    background-color: brown;
+}
+td:nth-child(2){
+    text-align: center;
+}
+td:nth-child(3){
+    text-align: center;
+}
+td:nth-child(4){
+    text-align: right;
+}
+
