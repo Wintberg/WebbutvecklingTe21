@@ -1,6 +1,6 @@
 body,th,td{
     border: 1px solid;
-    width: 25%;
+    width: 30%;
 }
 table {
     border-spacing: 0px;
@@ -19,13 +19,25 @@ th:nth-child(4){
     text-align: right;
     background-color: brown;
 }
+tr:nth-child(1){
+    background-color: darksalmon;
+}
 td:nth-child(2){
     text-align: center;
+}
+tr:nth-child(2){
+    background-color: brown;
 }
 td:nth-child(3){
     text-align: center;
 }
+tr:nth-child(3){
+    background-color: darksalmon;
+}
 td:nth-child(4){
     text-align: right;
+}
+tr:nth-child(4){
+    background-color: brown;
 }
 
