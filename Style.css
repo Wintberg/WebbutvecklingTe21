@@ -27,15 +27,6 @@ h2{
     color: black;
 
 }
-p:nth-child(2){
-    border: 3px solid;
-    
-}
-
-p:nth-child(3){
-    border:3px solid;
- 
-}
 p:nth-child(5) {
     background-color: white;
 }
@@ -76,5 +67,5 @@ nav a{
 }
 footer{
     grid-area: footer;
-    background-color: azure;
+    background-color: white;
 }
