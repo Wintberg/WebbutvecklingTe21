@@ -1,16 +1,17 @@
 
 body{
-    background-color:white;
+    background-color:lightslategray;
     color:black; 
     text-align: center;
     
     
     display: grid;
      grid-template-columns:1fr 1fr;
-     grid-template-rows: 80px 50px auto 50px;
+     grid-template-rows: 80px auto auto 50px;
      grid-template-areas:
     "header header"
     "nav nav"
+    "main aside"
     "main aside"
     "footer footer";
     
@@ -28,25 +29,30 @@ h2{
 
 }
 p:nth-child(5) {
-    background-color: white;
+    background-color:lightslategray;
 }
 p:nth-child(6){
-    background-color:white;
+    background-color:lightslategray;
     
 }
 a{
     text-decoration: none;
 }
 main{
-    background-color: white;
+    background-color:lightblue;
     grid-area: main;
+    border-style: solid;
+    font-family:Georgia, 'Times New Roman', Times, serif
 }
 aside{
     grid-area: aside;
+    background-color: lightblue;
+    border-style: solid;
+    font-family:Georgia, 'Times New Roman', Times, serif
 }
 nav{
     grid-area: nav;
-    background-color: white;
+    background-color:lightslategray;
 }
 
 nav ul{
@@ -64,8 +70,9 @@ nav li{
 
 nav a{
     text-decoration: none;
-}
+    font-family:Georgia, 'Times New Roman', Times, serif
+}   
 footer{
     grid-area: footer;
-    background-color: white;
+    background-color: lightslategray;
 }
