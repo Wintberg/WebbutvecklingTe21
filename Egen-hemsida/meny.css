@@ -1,0 +1,25 @@
+body{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 60px 40px auto 40px;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer"
+}
+header{
+    grid-area:"header";
+    text-align:center;
+}
+nav{
+    grid-area:"nav";
+    text-align:center;
+}
+main{
+    grid-area: "main";
+    text-align:center;
+}
+footer{
+    grid-area:"footer";
+}
