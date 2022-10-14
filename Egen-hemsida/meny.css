@@ -1,7 +1,9 @@
 body{
+    background-color:bisque;
+}
+.wrapper{
     display: grid;
     grid-template-columns:1fr;
-    background-color:cyan;
     grid-template-rows: 60px 40px auto 40px;
     grid-template-areas:
     "header"
@@ -9,12 +11,22 @@ body{
     "main"
     "footer";
 }
+
+#sida2 > .wrapper{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main aside"
+    "footer footer";
+}
+
 header{
-    grid-area:"header";
+    grid-area:header;
     text-align:center;
 }
 nav{
-    grid-area:"nav";
+    grid-area:nav;
     text-align:center;
 }
 nav ul{
@@ -34,17 +46,20 @@ nav a{
     color:white;
     text-align:center;
     padding:30px;
-    /*font-size:25px;*/
+    font-size:20px;
 }
 li a:hover{
     background-color:black;
 }
 
 main{
-    grid-area: "main";
+    grid-area:main;
     text-align:center;
 }
+aside{
+    grid-area:aside;
+}
 footer{
-    grid-area:"footer";
+    grid-area:footer;
     text-align:center;
 }
