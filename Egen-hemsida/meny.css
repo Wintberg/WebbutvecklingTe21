@@ -15,8 +15,8 @@ body{
 #sida2 > .wrapper{
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "header"
-    "nav"
+    "header header"
+    "nav nav"
     "main aside"
     "footer footer";
 }
@@ -58,6 +58,7 @@ main{
 }
 aside{
     grid-area:aside;
+    text-align: center;
 }
 footer{
     grid-area:footer;
