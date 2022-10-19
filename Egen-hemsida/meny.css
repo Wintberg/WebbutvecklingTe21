@@ -21,6 +21,14 @@ body{
     "footer footer";
 }
 
+#sida3 > .wrapper{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "main aside"
+    "footer footer"; 
+}
 header{
     grid-area:header;
     text-align:center;
@@ -51,7 +59,19 @@ nav a{
 li a:hover{
     background-color:black;
 }
-
+th,td{
+    border:1px solid;
+    width: 25%;
+    text-align: center;
+}
+tr:nth-child(2n){
+    background-color:coral;
+}
+table{
+    border-spacing: 0ch;
+    margin-left: 25%;
+    margin-right: 25%;
+}
 main{
     grid-area:main;
     text-align:center;
