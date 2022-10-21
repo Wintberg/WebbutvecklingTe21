@@ -2,6 +2,7 @@ body{
     background-color:bisque;
 }
 .wrapper{
+    /*Wrapper för sida 1*/
     display: grid;
     grid-template-columns:1fr;
     grid-template-rows: 60px 40px auto 40px;
@@ -13,6 +14,7 @@ body{
 }
 
 #sida2 > .wrapper{
+    /* Wrapper för sida 2 */
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "header header"
@@ -22,6 +24,7 @@ body{
 }
 
 #sida3 > .wrapper{
+    /* Wrapper för sida 3 */
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "header header"
@@ -30,29 +33,30 @@ body{
     "footer footer"; 
 }
 header{
+    /* Placerar headern i grid, lägger texten center */
     grid-area:header;
     text-align:center;
 }
 nav{
+    /* Placerar nav i grid, lägger texten & den svarta baren i center */
     grid-area:nav;
     text-align:center;
 }
 nav ul{
-    /*display:grid;*/
-    list-style-type:none;
-    /*grid-template-columns:1fr 1fr;*/
+    /* Gör bakgrunds färgen på nav till svart, ta bort margin & padding */
     overflow:hidden;
     padding: 0%;
     margin: 0%;
     background-color:black;
 }
 li{
+    /* Flytar texten mot vänster på sidan */
     float:left;
 }
 nav a{
+    /* Gör nav texten vit, tar bort understräck på text i nav, byter färg på texten till vit, ändrar mellanrumet mällan texten i nav, ändrar storlek på texten i nav */
     text-decoration:none;
     color:white;
-    text-align:center;
     padding:30px;
     font-size:20px;
 }
@@ -65,11 +69,12 @@ th,td{
     text-align: center;
 }
 tr:nth-child(2n){
+    /* Sätter Zebra striping på tabellen,sida 3 */
     background-color:coral;
 }
 table{
     border-spacing: 0ch;
-    margin-left: 25%;
+    margin-left: 30%;
     margin-right: 25%;
 }
 main{
