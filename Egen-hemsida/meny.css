@@ -1,4 +1,5 @@
 body{
+    /* Gör bakrundsfärgen på hemsidan till bisque */
     background-color:bisque;
 }
 .wrapper{
@@ -61,9 +62,11 @@ nav a{
     font-size:20px;
 }
 li a:hover{
+    /* Gör min global menys bakgrundsfärg till svart */
     background-color:black;
 }
 th,td{
+    /* Sätter en border runt tabellen,sida3 samt bestämmer tjoklek på bordern & sätter texten i center */
     border:1px solid;
     width: 25%;
     text-align: center;
@@ -71,21 +74,25 @@ th,td{
 tr:nth-child(2n){
     /* Sätter Zebra striping på tabellen,sida 3 */
     background-color:coral;
-}
+}   
 table{
+    /* Flyttar tabellen,sida3 mot mitten av asiden */
     border-spacing: 0ch;
     margin-left: 30%;
     margin-right: 25%;
 }
 main{
+    /* Lägger main i grid och flytar texten till mitten */
     grid-area:main;
     text-align:center;
 }
 aside{
+    /* Lägger aside i grid och flyttar texten till mitten */
     grid-area:aside;
     text-align: center;
 }
 footer{
+    /* Lägger footer i grid och flyttar texten till mitten */
     grid-area:footer;
     text-align:center;
 }
