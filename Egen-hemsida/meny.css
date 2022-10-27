@@ -91,6 +91,9 @@ aside{
     grid-area:aside;
     text-align: center;
 }
+hr{
+    background-color: black;
+}
 footer{
     /* Lägger footer i grid och flyttar texten till mitten */
     grid-area:footer;
