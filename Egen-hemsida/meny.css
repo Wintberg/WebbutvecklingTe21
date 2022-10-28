@@ -5,15 +5,19 @@ body{
 .wrapper{
     /*Wrapper för sida 1*/
     display: grid;
+    /* display grid skapar ett grid */
+    /* bestämmer storleken på kolumen */
     grid-template-columns:1fr;
-    grid-template-rows: 60px 40px auto 40px;
+    /* Sätter storleken på 4 rader */
+    grid-template-rows: 60px 40px auto 80px;
+    /* Skapar mallen för grids på hemsidan */
     grid-template-areas:
     "header"
     "nav "
     "main"
     "footer";
 }
-
+/* skapar en wrapper specielt för sida 2 */
 #sida2 > .wrapper{
     /* Wrapper för sida 2 */
     grid-template-columns: 1fr 1fr;
@@ -90,9 +94,6 @@ aside{
     /* Lägger aside i grid och flyttar texten till mitten */
     grid-area:aside;
     text-align: center;
-}
-hr{
-    background-color: black;
 }
 footer{
     /* Lägger footer i grid och flyttar texten till mitten */
